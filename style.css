@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    color: #222;
+}
+
+header {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #23395d;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+nav a:hover {
+    color: #00eeff;
+}
+
+section {
+    background-color: white;
+    margin: 25px auto;
+    padding: 25px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select,
+button {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #14213d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fca311;
+    color: #14213d;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #23395d;
+}
+
+section h2 {
+    text-align: center;
+    color: #14213d;
+    border-bottom: 2px solid #fca311;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 14px;
+    }
+
+    section {
+        width: 95%;
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+form {
+    margin-top: 15px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+
+input[type="number"] {
+    max-width: 300px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #23395d;
+    box-shadow: 0 0 5px rgba(35, 57, 93, 0.3);
+}
+
+.attendance-label {
+    color: #fc1111;
+    font-size: 14px;
+}

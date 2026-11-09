@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LPU4FLOW | Convocation</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+
+
+<header>
+    <h1>Convocation Management System</h1>
+    <p>||  Welcome to the Convocation Portal  ||</p>
+</header>
+
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#registration">Registration</a>
+    <a href="#robe">Robe Collection</a>
+    <a href="#guest">Guest Pass</a>
+    <a href="#schedule">Schedule</a>
+</nav>
+
+
+<section id="registration">
+    <h2>Convocation Registration</h2>
+
+    <form>
+
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <p id="nameMessage"></p>
+        <br><br>
+
+        <label for="regNumber">Registration Number:</label>
+        <input type="text" id="regNumber" placeholder="Enter your registration number">
+        <br><br>
+
+        <label for="department">Department:</label>
+
+        <select id="department">
+            <option value="">Select your department</option>
+
+            <option>B.Tech Computer Science and Engineering (CSE)</option>
+            <option>B.Tech CSE with AI and Machine Learning</option>
+            <option>B.Tech CSE with Data Science / Cyber Security</option>
+            <option>B.Tech Electronics and Communication Engineering (ECE)</option>
+            <option>B.Tech Civil Engineering</option>
+            <option>B.Tech Mechanical Engineering (ME)</option>
+            <option>B.Tech Biotechnology</option>
+            <option>B.Tech Aerospace Engineering</option>
+            <option>B.Tech Electrical Engineering (EE)</option>
+            <option>M.Tech</option>
+            <option>Diploma in Engineering</option>
+
+            <option>BBA</option>
+            <option>Integrated BBA + MBA</option>
+            <option>MBA</option>
+            <option>B.Com</option>
+            <option>M.Com</option>
+
+            <option>BCA</option>
+            <option>B.Sc. Information Technology</option>
+            <option>MCA</option>
+            <option>M.Sc. Information Technology</option>
+
+            <option>B.Arch</option>
+            <option>B.Des Fashion Design</option>
+            <option>B.Des Interior and Furniture Design</option>
+            <option>B.Des Product and Industrial Design</option>
+            <option>B.Des Multimedia / Graphics / Animation</option>
+            <option>M.Des</option>
+
+            <option>BA LL.B (Hons.)</option>
+            <option>BBA LL.B (Hons.)</option>
+            <option>LL.B</option>
+            <option>LL.M</option>
+
+            <option>B.Pharm</option>
+            <option>M.Pharm</option>
+            <option>B.Sc. Medical Laboratory Technology (MLT)</option>
+            <option>Bachelor of Optometry</option>
+            <option>B.Sc. Radiology and Medical Imaging Technology</option>
+            <option>B.Sc. Operation Theatre Technology</option>
+            <option>B.Sc. Forensic Science</option>
+            <option>M.Sc. Forensic Science / Clinical Biochemistry</option>
+
+            <option>B.Sc. Agriculture</option>
+            <option>B.Sc. Physics / Chemistry / Mathematics</option>
+            <option>B.Sc. Biotechnology / Microbiology</option>
+            <option>M.Sc. Agriculture</option>
+            <option>M.Sc. Physics / Chemistry / Mathematics</option>
+            <option>M.Sc. Biotechnology / Microbiology / Botany / Zoology</option>
+
+            <option>BA</option>
+            <option>MA</option>
+            <option>BA Journalism and Mass Communication</option>
+            <option>MA Journalism and Mass Communication</option>
+            <option>B.Sc. Hotel Management / Culinary Arts</option>
+
+            <option>B.Ed</option>
+            <option>Integrated BA B.Ed / B.Sc. B.Ed</option>
+            <option>M.Ed</option>
+            <option>BPES</option>
+            <option>M.P.Ed</option>
+        </select>
+
+        <br><br>
+
+        <label for="cgpa">CGPA:</label>
+        <input type="number" id="cgpa" min="0" max="10" step="0.01" placeholder="Enter CGPA">
+        <p id="cgpaMessage"></p>
+        <br><br>
+
+        <label>Attendance Confirmation:</label>
+
+<label class="attendance-label">
+    <input type="checkbox" required>
+    "...I confirm that I will attend the convocation ceremony I am pleased to be a part of this special occasion Thank you for this wonderful opportunity..."
+</label>
+
+        <br><br>
+
+        <button type="submit">Submit Registration</button>
+
+    </form>
+</section>
+
+
+<section id="robe">
+    <h2>Ceremonial Robe Collection</h2>
+
+    <label for="robeSize">Select Robe Size:</label>
+
+    <select id="robeSize">
+        <option value="">Choose Size</option>
+        <option value="S">Small (S)</option>
+        <option value="M">Medium (M)</option>
+        <option value="L">Large (L)</option>
+        <option value="XL">Extra Large (XL)</option>
+    </select>
+
+    <p>Security Deposit: ₹1000</p>
+</section>
+
+
+<section id="guest">
+    <h2>Family Guest Pass Request</h2>
+
+    <label for="guestPasses">Number of Guest Passes:</label>
+
+    <select id="guestPasses">
+        <option value="0">0 Guests</option>
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guests</option>
+    </select>
+
+    <br><br>
+
+    <button type="button">Request Guest Pass</button>
+</section>
+
+
+<section id="schedule">
+    <h2>Ceremony Schedule</h2>
+
+    <ul>
+        <li>9:00 AM - Student Reporting</li>
+        <li>10:00 AM - Convocation Ceremony Begins</li>
+        <li>11:30 AM - Degree Distribution</li>
+        <li>1:00 PM - Photography and Celebration</li>
+    </ul>
+
+    <h3>Dress Code</h3>
+    <p>Students must wear the official convocation robe and formal clothing.</p>
+
+    <h3>Seating Order</h3>
+    <p>Students must sit according to their assigned department and registration number.</p>
+
+    <h3>Photography Rules</h3>
+    <p>Photography is allowed only in designated areas and during permitted times.</p>
+</section>
+
+
+<footer>
+    <p>&copy; 2026 Convocation Management System. Developed by LPU4FLOW</p>
+</footer>
+
+
+</body>
+
+</html>
