@@ -24,6 +24,7 @@ guestButton.after(guestMessage);
 
 
 
+
 robeSize.addEventListener("change", function () {
 
     const selectedSize = robeSize.value;
@@ -83,6 +84,7 @@ registrationForm.addEventListener("submit", function (event) {
 
 
 
+
     if (registrationNumber === "") {
 
         alert("Please enter your registration number.");
@@ -90,6 +92,7 @@ registrationForm.addEventListener("submit", function (event) {
         return;
 
     }
+
 
 
 
@@ -113,7 +116,7 @@ registrationForm.addEventListener("submit", function (event) {
     }
 
 
- 
+
 
     if (!attendance) {
 
@@ -122,7 +125,6 @@ registrationForm.addEventListener("submit", function (event) {
         return;
 
     }
-
 
 
 
@@ -196,6 +198,7 @@ console.log(
     "LPU4FLOW Convocation Management System Loaded Successfully!"
 );
 
+// CGPA LIVE VALIDATION
 
 const cgpaInput = document.getElementById("cgpa");
 
