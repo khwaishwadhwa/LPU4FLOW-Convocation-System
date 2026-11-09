@@ -1,10 +1,3 @@
-// ==========================================
-// LPU4FLOW - CONVOCATION MANAGEMENT SYSTEM
-// ==========================================
-
-
-// 1. HTML ELEMENTS SELECT KARNA
-
 const robeSize = document.getElementById("robeSize");
 
 const guestPasses = document.getElementById("guestPasses");
@@ -19,7 +12,7 @@ const depositAmount =
     document.querySelector("#robe p");
 
 
-// 2. MESSAGE ELEMENTS CREATE KARNA
+
 
 const registrationMessage = document.createElement("p");
 
@@ -30,9 +23,6 @@ const guestMessage = document.createElement("p");
 guestButton.after(guestMessage);
 
 
-// ==========================================
-// 3. ROBE SECURITY DEPOSIT
-// ==========================================
 
 robeSize.addEventListener("change", function () {
 
@@ -55,9 +45,7 @@ robeSize.addEventListener("change", function () {
 });
 
 
-// ==========================================
-// 4. STUDENT REGISTRATION
-// ==========================================
+
 
 registrationForm.addEventListener("submit", function (event) {
 
@@ -83,7 +71,7 @@ registrationForm.addEventListener("submit", function (event) {
         ).checked;
 
 
-    // NAME VALIDATION
+
 
     if (studentName === "") {
 
@@ -94,7 +82,6 @@ registrationForm.addEventListener("submit", function (event) {
     }
 
 
-    // REGISTRATION NUMBER VALIDATION
 
     if (registrationNumber === "") {
 
@@ -105,7 +92,6 @@ registrationForm.addEventListener("submit", function (event) {
     }
 
 
-    // DEPARTMENT VALIDATION
 
     if (department === "") {
 
@@ -116,7 +102,7 @@ registrationForm.addEventListener("submit", function (event) {
     }
 
 
-    // CGPA VALIDATION
+
 
     if (cgpaInput === "" || cgpa < 0 || cgpa > 10) {
 
@@ -127,7 +113,7 @@ registrationForm.addEventListener("submit", function (event) {
     }
 
 
-    // ATTENDANCE VALIDATION
+ 
 
     if (!attendance) {
 
@@ -138,7 +124,7 @@ registrationForm.addEventListener("submit", function (event) {
     }
 
 
-    // SUCCESS MESSAGE
+
 
     registrationMessage.textContent =
         "Registration submitted successfully!";
@@ -153,13 +139,11 @@ registrationForm.addEventListener("submit", function (event) {
 });
 
 
-// ==========================================
-// 5. GUEST PASS REQUEST
-// ==========================================
+
 
 guestButton.addEventListener("click", function () {
 
- // GUEST PASS REQUEST
+
 
 guestButton.addEventListener("click", function () {
 
@@ -206,15 +190,12 @@ guestButton.addEventListener("click", function () {
 });
 
 
-// ==========================================
-// 6. WEBSITE LOADED MESSAGE
-// ==========================================
+
 
 console.log(
     "LPU4FLOW Convocation Management System Loaded Successfully!"
 );
 
-// CGPA LIVE VALIDATION
 
 const cgpaInput = document.getElementById("cgpa");
 
@@ -249,7 +230,7 @@ cgpaInput.addEventListener("input", function () {
 
 });
 
-// STUDENT NAME LIVE VALIDATION
+
 
 const nameInput = document.getElementById("name");
 
